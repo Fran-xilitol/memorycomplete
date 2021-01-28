@@ -26,6 +26,7 @@ SECRET_KEY = 'REPLACE'
 DEBUG = bool(os.environ.get("DJANGO_DEBUG", False))
 
 ALLOWED_HOSTS = ['memory.apparelrow.com']
+# ALLOWED_HOSTS = ['*']
 
 STATICFILES_DIRS = ("gameness/static",)
 SUSPECTED_THRESHOLD = 1.5
@@ -97,4 +98,4 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = 'static'
 
-USER_EMAILS = [f"{x}@email.com" for x in range(1,10)]
+USER_EMAILS = [f"{x}@email.com" for x in range(1, 10)]
